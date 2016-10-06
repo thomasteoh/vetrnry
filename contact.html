@@ -3,13 +3,15 @@ layout: page
 title: Contact
 ---
 	<h3>Contact</h3>
-	<p>We're available for contact below. Typical response times are within 24 to 48 hours.</p>
+	<p>We're available for contact through one of the methods below.</p>
 	<hr />
 	<h4>Contact form</h4>
 			<section>
 				<h4>Form</h4>
-				<form method="post" action="https://formspree.io/contact@vetrnry.com">
+				<form method="post" id="contactform">
 				        <input type="text" name="_gotcha" style="display:none" />
+					<input type="hidden" name="_subject" value="Vetrnry: Contact form" />
+					<input type="hidden" name="_next" value="contact.html#thanks" />
 					<div class="row uniform">
 						<div class="6u 12u$(xsmall)">
 							<input type="text" name="name" id="name" value="" placeholder="Name" />
@@ -39,5 +41,9 @@ title: Contact
 						</div>
 					</div>
 				</form>
+				<script>
+					var contactform =  document.getElementById('contactform');
+  					contactform.setAttribute('action', '//formspree.io/' + 'contact' + '@' + 'vetrnry' + '.' + 'com');
+				</script>
 			</section>
 
