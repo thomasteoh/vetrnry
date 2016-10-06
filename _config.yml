@@ -4,7 +4,8 @@
 # Site settings
 title: vetrnry
 description: |
-  A periodically updated compilation of resources from a veterinary perspective
+  A periodically updated compilation of resources
+  from a veterinary perspective
 owner: vetrnry
 first_published: 2016 # if migrating another site, the year of your first publish
 email: contact@vetrnry.com
