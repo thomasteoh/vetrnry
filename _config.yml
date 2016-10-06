@@ -4,9 +4,7 @@
 # Site settings
 title: vetrnry
 description: |
-  Test test
-  Second line test
-  Final test [link](google.com)
+  A periodically updated compilation of resources from a veterinary perspective
 owner: vetrnry
 first_published: 2016 # if migrating another site, the year of your first publish
 email: contact@vetrnry.com
