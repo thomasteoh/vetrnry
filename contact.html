@@ -87,10 +87,16 @@ title: Contact
 						<div class="3u 12u$(xsmall)">
 							<input type="text" name="animalweight" id="animalweight" value="" placeholder="Weight" />
 						</div>
-						<div class="3u$ 12u$(xsmall)">
-							<input type="email" name="animalgender" id="animalgender" value="" placeholder="Sex" />
+						<div class="3u 12u$(xsmall)">
+							<div class="select-wrapper">
+								<select name="gender" id="gender">
+									<option value="">- Sex -</option>
+									<option value="1"> Female</option>
+									<option value="2"> Male</option>
+								</select>
+							</div>
 						</div>
-						<div class="3u 12u$(small)">
+						<div class="3u$ 12u$(small)">
 							<input type="checkbox" id="animaldesexed" name="animaldesexed">
 							<label for="animaldesexed">Desexed?</label>
 						</div>
