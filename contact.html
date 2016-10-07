@@ -134,20 +134,20 @@ title: Contact
 
 	<hr />
 
-	<section id="other">
+	<section>
 		<h4>Other ways of getting in contact with us.</h4>
 		  <ul class="actions">
-    {% for socloc in site.social %}
-    {% if socloc[1] %}
-    {% if socloc[0] == 'email' %}
-    <li><a target="_blank" href="mailto:{{ socloc[1] }}" class="button icon fa-envelope-o"
-           >E-mail</a></li>
-    {% else %}
-    <li><a target="_blank" href="{{ socloc[1] }}" class="button icon fa-{{ socloc[0] }}"
+		    {% for socloc in site.social %}
+		    {% if socloc[1] %}
+		    {% if socloc[0] == 'email' %}
+		    <li><a target="_blank" href="mailto:{{ socloc[1] }}" class="button icon fa-envelope-o"
+		           >E-mail</a></li>
+		    {% else %}
+		    <li><a target="_blank" href="{{ socloc[1] }}" class="button icon fa-{{ socloc[0] }}"
            >{{ socloc[0] }}</a></li>
-    {% endif %}
-    {% endif %}
-    {% endfor %}
-  </ul>
+		    {% endif %}
+		    {% endif %}
+		    {% endfor %}
+		  </ul>
 	</section>
 
