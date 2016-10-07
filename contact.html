@@ -59,10 +59,12 @@ title: Contact
 				<form method="post" id="bookingform">
 					<input type="hidden" name="_subject" value="Vetrnry: booking form submission" />
 					<input type="hidden" name="_next" value="contact.html#thanks" class="more scrolly" />
-					<div class="row uniform">				<script>
-			        <input type="text" name="_gotcha" style="visibility:hidden" />
+					<div class="row uniform">				
+					<input type="text" name="_gotcha" style="visibility:hidden" />
 					</div>
-				</form>				var contactform =  document.getElementById('bookingform');
+				</form>
+				<script>
+				var contactform =  document.getElementById('bookingform');
 				contactform.setAttribute('action', '//formspree.io/' + 'contact' + '@' + 'vetrnry' + '.' + 'com');
 				</script>
 			</section>
