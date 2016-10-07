@@ -7,67 +7,33 @@ title: Contact
 	<p>We're available for contact through one of the methods below.</p>
 	<hr />
 
-
-	<hr />
-
-	<section id="book" class="wrapper special">
-		<h4>Booking form for veterinary house-calls</h4>
-		<p>Cats and dogs are our primary focus for our veterinary house-call service. Consultation time is 30 minutes and will include a physical examination performed by an experienced registered Veterinarian.</p>
+	<section id="contactus" class="wrapper special">
+	<h4>Contact form</h4>
 			<section>
-				<form method="post" id="bookingform">
+				<form method="post" id="contactform">
 				        <input type="text" name="_gotcha" style="display:none" />
-					<input type="hidden" name="_subject" value="Vetrnry: booking form submission" />
+					<input type="hidden" name="_subject" value="Vetrnry: contact form submission" />
 					<input type="hidden" name="_next" value="contact.html#thanks" class="more scrolly" />
 					<div class="row uniform">
-						<div class="4u 12u$(xsmall)">
+						<div class="6u 12u$(xsmall)">
 							<input type="text" name="name" id="name" value="" placeholder="Name" />
 						</div>
-						<div class="4u 12u$(xsmall)">
-							<input type="text" name="phone" id="phone" value="" placeholder="Phone" />
-						</div>
-						<div class="4u$ 12u$(xsmall)">
+						<div class="6u$ 12u$(xsmall)">
 							<input type="email" name="email" id="email" value="" placeholder="Email" />
 						</div>
-
-						<h5>Animal details</h5>
 						<div class="12u$">
 							<div class="select-wrapper">
-								<select name="species" id="species">
-									<option value="">- Animal -</option>
-									<option value="1">Cat</option>
-									<option value="1">Dog</option>
+								<select name="category" id="category">
+									<option value="">- Category -</option>
+									<option value="1">General enquiry</option>
+									<option value="1">Consultation service for veterinary business</option>
+									<option value="1">Downloadable resources</option>
+									<option value="1">Veterinary house-calls</option>
 								</select>
 							</div>
 						</div>
-						<div class="6u 12u$(xsmall)">
-							<input type="text" name="animalname" id="animalname" value="" placeholder="Animal Name" />
-						</div>
-						<div class="6u$ 12u$(xsmall)">
-							<input type="text" name="animalage" id="animalage" value="" placeholder="Age" />
-						</div>
-						
-						<div class="3u 12u$(xsmall)">
-							<input type="text" name="animalbreed" id="animalbreed" value="" placeholder="Breed" />
-						</div>
-						<div class="3u 12u$(xsmall)">
-							<input type="text" name="animalweight" id="animalweight" value="" placeholder="Weight" />
-						</div>
-						<div class="3u 12u$(xsmall)">
-							<div class="select-wrapper">
-								<select name="gender" id="gender">
-									<option value="">- Sex -</option>
-									<option value="1"> Female</option>
-									<option value="2"> Male</option>
-								</select>
-							</div>
-						</div>
-						<div class="3u$ 12u$(small)">
-							<input type="checkbox" id="animaldesexed" name="animaldesexed">
-							<label for="animaldesexed">Desexed?</label>
-						</div>
-
 						<div class="12u$">
-							<textarea name="concerns" id="concerns" placeholder="Any specific concerns?" rows="6"></textarea>
+							<textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
 						</div>
 						<div class="12u$">
 							<ul class="actions">
@@ -78,12 +44,13 @@ title: Contact
 					</div>
 				</form>
 				<script>
-				var contactform =  document.getElementById('bookingform');
+				var contactform =  document.getElementById('contactform');
 				contactform.setAttribute('action', '//formspree.io/' + 'contact' + '@' + 'vetrnry' + '.' + 'com');
 				</script>
 			</section>
 	</section>
 
+	<hr />
 	<hr />
 
 	<section id="thanks" class="wrapper special">
