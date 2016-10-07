@@ -59,7 +59,63 @@ title: Contact
 				<form method="post" id="bookingform">
 					<input type="hidden" name="_subject" value="Vetrnry: booking form submission" />
 					<input type="hidden" name="_next" value="contact.html#thanks" />
-					<div class="row uniform">				
+					<div class="row uniform">
+	  					<div class="4u">
+							<input type="text" name="contactname" id="contactname" value="" placeholder="Name" />
+						</div>
+						<div class="4u">
+							<input type="text" name="contactphone" id="contactphone" value="" placeholder="Phone" />
+						</div>
+						<div class="4u$">
+							<input type="email" name="contactemail" id="contactemail" value="" placeholder="Email" />
+						</div>
+
+						<h5>Animal details</h5>
+						<div class="12u$">
+							<div class="select-wrapper">
+								<select name="species" id="species">
+									<option value="">- Animal -</option>
+									<option value="1">Cat</option>
+									<option value="1">Dog</option>
+								</select>
+							</div>
+						</div>
+						<div class="6u">
+							<input type="text" name="animalname" id="animalname" value="" placeholder="Animal Name" />
+						</div>
+						<div class="6u$">
+							<input type="text" name="animalage" id="animalage" value="" placeholder="Age" />
+						</div>
+						
+						<div class="3u">
+							<input type="text" name="animalbreed" id="animalbreed" value="" placeholder="Breed" />
+						</div>
+						<div class="3u">
+							<input type="text" name="animalweight" id="animalweight" value="" placeholder="Weight" />
+						</div>
+						<div class="3u">
+							<div class="select-wrapper">
+								<select name="gender" id="gender">
+									<option value="">- Sex -</option>
+									<option value="1"> Female</option>
+									<option value="2"> Male</option>
+								</select>
+							</div>
+						</div>
+						<div class="3u$">
+							<input type="checkbox" id="animaldesexed" name="animaldesexed">
+							<label for="animaldesexed">Desexed?</label>
+						</div>
+
+						<div class="12u$">
+							<textarea name="concerns" id="concerns" placeholder="Any specific concerns?" rows="6"></textarea>
+						</div>
+						<div class="12u$">
+							<ul class="actions">
+								<li><input type="submit" value="Send" class="special" /></li>
+								<li><input type="reset" value="Reset" /></li>
+							</ul>
+						</div>				  
 					<input type="text" name="_gotcha" style="visibility:hidden" />
 					</div>
 				</form>
