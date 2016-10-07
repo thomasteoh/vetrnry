@@ -14,6 +14,34 @@ title: Contact
 				        <input type="text" name="_gotcha" style="visibility:hidden" />
 					<input type="hidden" name="_subject" value="Vetrnry: contact form submission" />
 					<input type="hidden" name="_next" value="contact.html#thanks" />
+					<div class="row uniform">
+						<div class="6u">
+							<input type="text" name="contactname" id="contactname" value="" placeholder="Name" />
+						</div>
+						<div class="6u$">
+							<input type="email" name="contactemail" id="contactemail" value="" placeholder="Email" />
+						</div>
+						<div class="12u$">
+							<div class="select-wrapper">
+								<select name="category" id="category">
+									<option value="">- Category -</option>
+									<option value="1">General enquiry</option>
+									<option value="1">Consultation service for veterinary business</option>
+									<option value="1">Downloadable resources</option>
+									<option value="1">Veterinary house-calls</option>
+								</select>
+							</div>
+						</div>
+						<div class="12u$">
+							<textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
+						</div>
+						<div class="12u$">
+							<ul class="actions">
+								<li><input type="submit" value="Send" class="special" /></li>
+								<li><input type="reset" value="Reset" /></li>
+							</ul>
+						</div>
+					</div>
 				</form>
 				<script>
 				var contactform =  document.getElementById('contactform');
