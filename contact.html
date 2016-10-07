@@ -51,29 +51,80 @@ title: Contact
 	</section>
 
 	<hr />
-	<hr />
 
-	<section id="thanks" class="wrapper special">
-		<h4>Thanks</h4>
-		<p>Thank you for your interest in our services, we'll review your submission and get back to you as early as possible. Our typical response time is within 2 business days.</p>
+	<section id="book" class="wrapper special">
+		<h4>Booking form for veterinary house-calls</h4>
+		<p>Cats and dogs are our primary focus for our veterinary house-call service. Consultation time is 30 minutes and will include a physical examination performed by an experienced registered Veterinarian.</p>
+			<section>
+				<form method="post" id="bookingform">
+				        <input type="text" name="_gotcha" style="display:none" />
+					<input type="hidden" name="_subject" value="Vetrnry: booking form submission" />
+					<input type="hidden" name="_next" value="contact.html#thanks" class="more scrolly" />
+					<div class="row uniform">
+						<div class="4u 12u$(xsmall)">
+							<input type="text" name="name" id="name" value="" placeholder="Name" />
+						</div>
+						<div class="4u 12u$(xsmall)">
+							<input type="text" name="phone" id="phone" value="" placeholder="Phone" />
+						</div>
+						<div class="4u$ 12u$(xsmall)">
+							<input type="email" name="email" id="email" value="" placeholder="Email" />
+						</div>
+
+						<h5>Animal details</h5>
+						<div class="12u$">
+							<div class="select-wrapper">
+								<select name="species" id="species">
+									<option value="">- Animal -</option>
+									<option value="1">Cat</option>
+									<option value="1">Dog</option>
+								</select>
+							</div>
+						</div>
+						<div class="6u 12u$(xsmall)">
+							<input type="text" name="animalname" id="animalname" value="" placeholder="Animal Name" />
+						</div>
+						<div class="6u$ 12u$(xsmall)">
+							<input type="text" name="animalage" id="animalage" value="" placeholder="Age" />
+						</div>
+						
+						<div class="3u 12u$(xsmall)">
+							<input type="text" name="animalbreed" id="animalbreed" value="" placeholder="Breed" />
+						</div>
+						<div class="3u 12u$(xsmall)">
+							<input type="text" name="animalweight" id="animalweight" value="" placeholder="Weight" />
+						</div>
+						<div class="3u 12u$(xsmall)">
+							<div class="select-wrapper">
+								<select name="gender" id="gender">
+									<option value="">- Sex -</option>
+									<option value="1"> Female</option>
+									<option value="2"> Male</option>
+								</select>
+							</div>
+						</div>
+						<div class="3u$ 12u$(small)">
+							<input type="checkbox" id="animaldesexed" name="animaldesexed">
+							<label for="animaldesexed">Desexed?</label>
+						</div>
+
+						<div class="12u$">
+							<textarea name="concerns" id="concerns" placeholder="Any specific concerns?" rows="6"></textarea>
+						</div>
+						<div class="12u$">
+							<ul class="actions">
+								<li><input type="submit" value="Send" class="special" /></li>
+								<li><input type="reset" value="Reset" /></li>
+							</ul>
+						</div>
+					</div>
+				</form>
+				<script>
+				var contactform =  document.getElementById('bookingform');
+				contactform.setAttribute('action', '//formspree.io/' + 'contact' + '@' + 'vetrnry' + '.' + 'com');
+				</script>
+			</section>
 	</section>
 
 	<hr />
-
-	<section class="wrapper special">
-		<h4>Other ways of getting in contact with us.</h4>
-		  <ul class="actions">
-		    {% for socloc in site.social %}
-		    {% if socloc[1] %}
-		    {% if socloc[0] == 'email' %}
-		    <li><a target="_blank" href="mailto:{{ socloc[1] }}" class="button icon fa-envelope-o"
-		           >E-mail</a></li>
-		    {% else %}
-		    <li><a target="_blank" href="{{ socloc[1] }}" class="button icon fa-{{ socloc[0] }}"
-           >{{ socloc[0] }}</a></li>
-		    {% endif %}
-		    {% endif %}
-		    {% endfor %}
-		  </ul>
-	</section>
 
